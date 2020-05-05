@@ -1,0 +1,215 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Scrollbar customized */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(#002325, #000e0f);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: radial-gradient(#006368, #000e0f);
+}
+
+/* Navbar */
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  background: #005c69;
+}
+
+.navbar h2 {
+  font-size: 28px;
+  margin: auto 0;
+  color: #fff;
+  margin-left: 30px;
+}
+
+/* Register */
+
+.regForm {
+  display: flex;
+  height: 90vh;
+  background: #eee;
+}
+
+.regForm form {
+  height: auto;
+  width: 30vw;
+  padding: 5vh 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 3px 4px 5px #aaa;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.regForm h2 {
+  font-size: 32px;
+  color: #005c69;
+  margin: 0;
+  text-align: center;
+}
+
+.regForm input {
+  height: 3vh;
+  padding: 5px 8px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3vh;
+  outline-color: #005c69;
+}
+
+.regForm input[type="submit"] {
+  height: 40px;
+  width: 130px;
+  font-size: 16px;
+  border: none;
+  background: #005c69;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: 2px 2px 4px #aaa;
+  margin-top: 5vh;
+}
+
+@media (max-width: 860px) {
+  .regForm form {
+    width: 80%;
+  }
+}
+
+/* Chat screen */
+
+.chatScreen {
+  height: 90vh;
+  background: #000e0f;
+  display: flex;
+  flex-direction: column;
+}
+
+.msgs {
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 1vh 0;
+  display: block;
+}
+
+.msgs p {
+  margin: 0;
+  background: #bcf7ff;
+  max-width: 60%;
+  padding: 12px;
+  border-radius: 5px;
+  margin: 1.2vh 2vw;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+}
+
+.msgs span {
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: 1vh;
+}
+
+.msgs .admin {
+  color: #444;
+  padding: 8px;
+  margin: 2vh auto;
+  background: #fdff8a;
+  text-align: center;
+  max-width: 40%;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.msgs .admin span {
+  color: #444;
+  margin-bottom: 0;
+}
+
+.msgs .user {
+  color: #000e0f;
+}
+
+.msgs .user span {
+  color: #444;
+}
+
+.msgs .me {
+  color: #fff;
+  background: #00383f;
+  margin-left: 40%;
+}
+
+.sendMsg {
+  height: 10vh;
+  background: #aaa;
+  display: flex;
+}
+
+.sendMsg input {
+  border: none;
+  border-radius: 50px;
+  margin: 1.5vh auto;
+  padding: 5px 15px;
+  width: 90%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  outline-style: none;
+}
+
+.sendMsg button {
+  width: 50px;
+  height: 50px;
+  margin: auto 0;
+  font-size: 20px;
+  border: none;
+  background: #005c69;
+  border-radius: 50%;
+  color: #fff;
+  box-shadow: 2px 2px 4px #aaa;
+}
+
+@media (max-width: 860px) {
+  .msgs .admin {
+    max-width: 60%;
+    margin: 1vh auto;
+  }
+
+  .msgs .admin span {
+    display: none;
+  }
+
+  .msgs span {
+    margin-bottom: 0.5vh;
+  }
+
+  .sendMsg {
+    height: 8vh;
+  }
+
+  .sendMsg input {
+    width: 80%;
+    margin-left: 2vw;
+  }
+
+  .sendMsg button {
+    margin-right: 2vw;
+  }
+}
