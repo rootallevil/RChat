@@ -19,5 +19,5 @@ RUNNING THE PROJECT
 * Once the node modules are installed, go inside the cloned folder by `cd RChat`.
 * Hence, to start the project, run the command `npm run dev` where, *dev* is a script which runs the client as well as the server concurrently.
 * Open your browser and go to *http://localhost:3000* and you will see a register page. There you can register by a username you want.
-* Open another tab and go to the same link as above and register as another user. You could also use another device connected on the same network as the device which runs the `run` command and go to your IP address, followed by port number i.e. 3000 `192.168.1.1:3000`.
+* Open another tab and go to the same link as above and register as another user. You could also use another device connected on the same network as the device which runs the `run` command and go to your IP address, followed by port number i.e. 3000 *192.168.1.1:3000*.
 * Now, the two users can communicate to each other.
